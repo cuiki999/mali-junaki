@@ -1,0 +1,19 @@
+@keyframes star {
+  0% {
+    opacity: 0;
+  }
+  10% { 
+    opacity: 1;
+    transform: translate(-100px, -500px);
+    //transform: translateX(-50px);
+  } 
+  20% { 
+    opacity: 0;
+    //transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+    //transform: translateX(0);
+  }
+}

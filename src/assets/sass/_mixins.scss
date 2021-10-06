@@ -1,0 +1,28 @@
+@mixin breakpoint($point) {
+  @if $point == xxl-only {
+    @media (min-width: 1400px) {@content; }
+  }
+
+  @if $point == xl-down {
+    @media (max-width: 1399px) {@content; }
+  }
+
+  @else if $point == lg-down {
+    @media (max-width: 1199px) {@content; }
+  }
+
+  @else if $point == md-down {
+    @media (max-width: 991px) {@content; }
+  }
+
+  @else if $point == sm-down {
+    @media (max-width: 767px) {@content; }
+  }
+
+  @else if $point == xs-only {
+    @media (max-width: 599px) {@content; }
+  }
+}
+
+// example usage
+// @include breakpoint(xl-down) {}
