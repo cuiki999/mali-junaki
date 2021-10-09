@@ -21,7 +21,8 @@ export default {
 
 .steps {
   display: flex;
-  margin: auto auto 15px;
+  justify-content: center;
+  margin-bottom: 15px;
 
   & > div {
     display: flex;
@@ -33,13 +34,14 @@ export default {
       line-height: 30px;
       text-align: center;
       font-weight: 600;
-      border: 2px solid $salmon;
+      border: 2px solid $blueGray;
       border-radius: 50%;
       background: #fff;
-      color: $salmon;
+      color: $blueGray;
+      user-select: none;
 
       &.active {
-        background: $salmon;
+        background: $blueGray;
         color: #fff;
       }
     }
@@ -47,7 +49,7 @@ export default {
     .line {
       width: 25px;
       height: 0;
-      border-bottom: 3px dotted $primaryText;
+      border-bottom: 3px dotted $blueGray;
       margin: 0 3px;
     }
   }

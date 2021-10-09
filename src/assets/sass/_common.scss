@@ -16,6 +16,36 @@ body {
   color: $primaryText;
 }
 
+h1.default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+
+  &::before, &::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: $blueGray;
+    margin: 0 20px;
+
+    @include breakpoint(lg-down) {
+      margin: 0 10px;
+    }
+  }
+}
+
+h1.small {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
 .content {
   margin: auto;
   max-width: 1500px;
@@ -32,33 +62,34 @@ body {
 }
 
 .btn {
-  width: 200px;
-  height: 40px;
-  border-radius: 20px;
-  line-height: 40px;
+  display: inline-block;
+  width: initial;
+  height: 50px;
+  line-height: 50px;
   margin: 20px auto 0;
+  padding: 0 30px;
+  border-radius: 10px;
+  font-family: "Patrick Hand", sans-serif;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  filter: brightness(100%);
-  transition: filter 0.5s;
+  @include hover;
 
   span {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    color: #fff;
   }
 
   &.salmon {
     background: $salmon;
-
-    span {
-      color: #fff;
-    }
   }
 
-  &:hover {
-    filter: brightness(130%);
-    transition: filter 0.5s;
+  &.red {
+    background: $indianRed;
+  }
+
+  &.blue-gray {
+    background: $blueGray;
   }
 }
 
@@ -90,4 +121,8 @@ body {
 
 .mr-20 {
   margin-right: 20px;
+}
+
+[v-cloak] {
+  display: none !important;
 }

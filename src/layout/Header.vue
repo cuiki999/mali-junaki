@@ -5,15 +5,15 @@
     </div>-->
     <div class="navbar content">
       <div class="nav-section justify-left">
-        <img src="/images/nav-hamburger.png">
+        <img src="/images/nav-hamburger.png" alt="Menu">
         <span class="ml-10">Meni</span>
       </div>
       <div class="nav-section justify-center">
-        <img src="/images/nav-logo.png">
+        <img src="/images/nav-logo.png" alt="Logo Mali junaki">
       </div>
       <div class="nav-section justify-right">
         <span class="mr-10">Košarica</span>
-        <img src="/images/nav-cart.png">
+        <img src="/images/nav-cart.png" alt="Nakupovalni voziček">
       </div>
     </div>
   </header>

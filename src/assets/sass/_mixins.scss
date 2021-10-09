@@ -1,3 +1,5 @@
+// example usage: @include breakpoint(xl-down) {}
+
 @mixin breakpoint($point) {
   @if $point == xxl-only {
     @media (min-width: 1400px) {@content; }
@@ -24,5 +26,12 @@
   }
 }
 
-// example usage
-// @include breakpoint(xl-down) {}
+@mixin hover() {
+  filter: brightness(100%);
+  transition: filter 0.5s;
+
+  &:hover {
+    filter: brightness(130%);
+    transition: filter 0.5s;
+  } 
+}

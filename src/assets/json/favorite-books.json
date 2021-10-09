@@ -1,0 +1,38 @@
+[
+	{
+		"img": "cover1.png",
+		"title": "Matic, 10 razlogov, zakaj te ljubim",
+		"description": "Ljubezen je (p)osebna, zato na poseben način – s personalizirano knjigo – povejte »Ljubim te«. S to knjigo, ki jo lahko v celoti personalizirate, boste navdušili ob kateri koli priložnosti, ki slavi ljubezen. Personalizirajte sebe IN svojega partnerja, moža ali fanta, povejte, zakaj je za vas neskončno poseben, in tako proslavite vajin edinstven odnos. Torej, katerih je vaših 10 razlogov, zakaj ga ljubite?",
+		"price": "39,00 €"
+	},
+	{
+		"img": "cover2.png",
+		"title": "Nina, 10 razlogov, zakaj te ljubim",
+		"description": "Ljubezen je (p)osebna, zato na poseben način – s personalizirano knjigo – povejte »Ljubim te«. S to knjigo, ki jo lahko v celoti personalizirate, boste navdušili ob kateri koli priložnosti, ki slavi ljubezen. Personalizirajte sebe IN svojo partnerko, ženo ali punco, povejte, zakaj je za vas neskončno posebna, in tako proslavite vajin edinstven odnos. Torej, katerih je vaših 10 razlogov, zakaj jo ljubite?",
+		"price": "39,00 €"
+	},
+	{
+		"img": "cover3.png",
+		"title": "Oliver, vedno boš moj mali fantek",
+		"description": "Oh, zakaj tako hitro rasteš? A veš … vedno boš moj mali fantek! Knjiga, s katero lahko očka presenetite ob kateri koli priložnosti. ''Oliver, vedno boš moj mali fantek'' prikaže odraščajočo deškost skozi ljubeče očetove oči – od vožnje s kolesom do večernega 'lahko noč'. Vsakodnevni trenutki, ki s to personalizirano knjigo ostanejo za vedno zapisani kot najlepši spomini na vez med očkom in njegovim malčkom. Pripravljeni na čustveni vrtiljak? Ja, točno takšen, kot je očetovstvo.",
+		"price": "39,00 €"
+	},
+	{
+		"img": "cover4.png",
+		"title": "Ko bo Neža velika – očkova zgodba",
+		"description": "''Le stežka se prebijeva čez prvo stran brez solz v očeh! Navdušen je na svojo knjigo!'' To je le en izmed komentarjev na našo personalizirano knjigo za očke. Zaradi personaliziranega videza očka in male junakinje, ki se skupaj pojavita na naslovnici in vsaki strani, gre za najlepše darilo, s katerim lahko presenetite očka ob kateri koli priložnosti. Za piko na i smo dodali še možnost vpisa ljubkovalnega imena za očka, ki v naši knjižni uspešnici sanjari o tem, kaj bo njegova malčica postala, ko odraste. Navdihujoče za otroke, čustveno za očke – zmagovalna kombinacija!",
+		"price": "43,00 €"
+	},
+	{
+		"img": "cover5.png",
+		"title": "Žak, vedno boš moj mali fantek",
+		"description": "Oh, zakaj tako hitro rasteš? A veš … vedno boš moj mali fantek! Knjiga, ki je najlepše presenečenje ob kateri koli priložnosti. ''Žak, vedno boš moj mali fantek'' prikaže odraščajočo deškost skozi ljubeče mamine oči – od vožnje s kolesom do večernega 'lahko noč'. Vsakodnevni trenutki, ki s to personalizirano knjigo ostanejo za vedno zapisani kot najlepši spomini na vez med mamo in njenim malčkom. Pripravljeni na čustveni vrtiljak? Ja, točno takšen, kot je materinstvo.",
+		"price": "39,00 €"
+	},
+	{
+		"img": "cover6.png",
+		"title": "Družina Erjavec",
+		"description": "Tokrat predstavljamo knjigo, kjer personalizirate 3 družinske člane! Tako je, otrok + mama + oče = najboljše darilo, namenjeno vsej družini! Otroci in starši pokajo od ponosa, ko na platnici knjižne uspešnice zagledajo svojo podobo. Očetovski dan (20. junij) bo tako ob prebiranju smešnih in odštekanih rim nepozaben, družinske vezi pa močne in edinstvene.",
+		"price": "43,00 €"
+	}
+]

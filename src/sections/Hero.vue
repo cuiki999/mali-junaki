@@ -1,27 +1,34 @@
 <template>
   <section id="hero">
-    <!-- <img src="/images/star.png" class="star"> -->
-    <div class="character-maker">
-      <span class="intro">Ustvarite najbolj personalizirano knjigo za svojega malčka</span>
-      <steps :count="3" :active="1"></steps>
+    <div class="character-maker" v-if="!loading">
+      <div class="intro">
+        <h1 class="small">Ustvarite najbolj personalizirano knjigo za svojega malčka</h1>
+        <steps :count="3" :active="1"></steps>
+      </div>
       <div class="character-wrapper">
           <form>
             <span>Ime mi je</span>
-            <input type="text" name="name" placeholder="ime">
+            <span>Ime otroka:</span>
+            <input type="text" name="name">
           </form>
-          <img src="/images/character.png" class="character">
-          <img src="/images/bubble-talk.png" class="bubble">
+          <img src="/images/character.png" class="character" alt="Slika otroka">
+          <img src="/images/bubble-talk.png" class="bubble" alt="Oblaček">
           <div class="gender-select">
             <span class="material-icons">female</span>
             <span class="material-icons">male</span>
           </div>
       </div>
-      <div class="message">
-        <span>Prosimo, vnesite ime otroka</span>
+      <div class="bottom">
+        <span class="message">Izberite spol otroka in vnesite njegovo ime</span>
+        <div class="btn salmon">
+          <span>Nadaljuj</span>
+        </div>
       </div>
-      <div class="btn salmon">
-        <span>Nadaljuj</span>
-      </div>
+    </div>
+    <div v-else class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
     </div>
   </section>
 </template>
@@ -34,6 +41,18 @@ export default {
   name: 'hero',
   components: {
     'steps': Steps
+  },
+  data() {
+    return {
+      loading: true
+    }
+  },
+  created() {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.loading = false;
+      }, 500);
+    });
   }
 }
 </script>
@@ -42,24 +61,16 @@ export default {
 
 #hero {
   background-image: linear-gradient(0deg, rgba(255,255,255,0.2847339619441527) 2%, rgba(246,253,255,1) 88%), url('/images/stars-transparent.svg');
-  height: 830px;
-  background-size: cover;
+  height: 714px;
+  background-size: bottom;
   background-position: center;
   background-size: inherit;
+  background-repeat: no-repeat;
   display: flex;
 
   @include breakpoint(xs-only) {
-    height: 1000px;
+    height: 826px;
   }
-
-  /* TODO
-  .star {
-    position: absolute;
-    left: 200px;
-    top: 800px;
-    animation: star 10s infinite ease-in;
-  }
-  */
 
   .character-maker {
     margin: 65px auto auto;
@@ -72,12 +83,12 @@ export default {
       padding: 0 25px;
     }
 
-    span.intro {
-      font-size: 1.3rem;
-      line-height: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 30px;
+    .intro {
+      animation: slide-up 1s;
+
+      h1 {
+        margin-bottom: 30px;
+      }
     }
 
     .character-wrapper {
@@ -85,6 +96,7 @@ export default {
       margin-top: 40px;
       margin-bottom: 10px;
       position: relative;
+      animation: appear 1s;
 
       @include breakpoint(xs-only) {
         display: block;
@@ -124,6 +136,22 @@ export default {
 
         span {
           font-size: 1.3rem;
+
+          &:nth-child(1) {
+            display: block;
+
+            @include breakpoint(xs-only) {
+              display: none;
+            }
+          }
+
+          &:nth-child(2) {
+            display: none;
+
+            @include breakpoint(xs-only) {
+              display: block;
+            }
+          }
         }
 
         input {
@@ -162,6 +190,7 @@ export default {
           height: 50px;
           border-radius: 50%;
           cursor: pointer;
+          @include hover;
 
           &:nth-child(1) {
             background: $salmon;
@@ -169,16 +198,17 @@ export default {
           }
 
           &:nth-child(2) {
-            color: $salmon;
-            border: 3px solid $salmon;
+            color: $blueGray;
+            border: 3px solid $blueGray;
             margin-left: 15px;
           }
         }
       }
     }
 
-    .message {
+    .bottom {
       text-align: center;
+      animation: slide-up 1s;
     }
   }
 }
