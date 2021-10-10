@@ -1,8 +1,32 @@
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
   }
-  80% {
+  40% {
     opacity: 0;
   }
   100% {
@@ -10,41 +34,13 @@
   }
 }
 
-@keyframes slide-right {
+@-webkit-keyframes scroll-up {
   0% {
-    transform: translateX(-800px);
+    transform: translateY(500px);
     opacity: 0;
   }
   50% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(800px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-up {
-  0% {
-    transform: translateY(800px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -52,13 +48,13 @@
   }
 }
 
-@keyframes slide-down {
+@-moz-keyframes scroll-up {
   0% {
-    transform: translateY(-800px);
+    transform: translateY(500px);
     opacity: 0;
   }
   50% {
-    opacity: 0;
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -77,5 +73,75 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes grow-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes grow-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+@keyframes grow-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

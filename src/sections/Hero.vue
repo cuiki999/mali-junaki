@@ -42,18 +42,7 @@ export default {
   components: {
     'steps': Steps
   },
-  data() {
-    return {
-      loading: true
-    }
-  },
-  created() {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        this.loading = false;
-      }, 500);
-    });
-  }
+  props: ["loading"]
 }
 </script>
 
@@ -69,7 +58,7 @@ export default {
   display: flex;
 
   @include breakpoint(xs-only) {
-    height: 826px;
+    height: 850px;
   }
 
   .character-maker {
@@ -84,7 +73,7 @@ export default {
     }
 
     .intro {
-      animation: slide-up 1s;
+      animation: appear 1s;
 
       h1 {
         margin-bottom: 30px;
@@ -208,7 +197,11 @@ export default {
 
     .bottom {
       text-align: center;
-      animation: slide-up 1s;
+      animation: appear 1s;
+
+      & > span {
+        display: block;
+      }
     }
   }
 }

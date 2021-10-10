@@ -14,7 +14,7 @@
         <div class="shadow"></div>  
       </div>
       <img src="/images/line.png" class="line">
-      <div>
+      <div class="link">
         <span class="material-icons">arrow_circle_right</span>
         <span class="txt">Ustvarite svojo</span>
       </div>
