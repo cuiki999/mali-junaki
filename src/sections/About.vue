@@ -35,6 +35,10 @@ export default {
 #about {
   height: 1000px;
 
+   @include breakpoint(lg-down) {
+    height: auto;
+  }
+
   .image-wrapper {
     margin: 40px 0 0 0;
     background: url('/images/video.jpg');
@@ -46,6 +50,10 @@ export default {
 
     @media (max-width: 1500px) {
       background-size: contain;
+    }
+
+    @include breakpoint(lg-down) {
+      background-attachment: inherit;
     }
   }
 }

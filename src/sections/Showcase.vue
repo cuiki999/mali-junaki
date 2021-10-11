@@ -81,6 +81,12 @@ export default {
     justify-content: center;
     text-align: left;
 
+    &.animate {
+      visibility: visible;
+      -webkit-animation: scroll-up 0.5s;
+      animation: scroll-up 0.5s;
+    }
+
     .card {
       width: 380px;
       height: -webkit-fit-content;

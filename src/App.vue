@@ -22,7 +22,7 @@ export default {
     this.setupScroll();
   },
   beforeDestroy() {
-    window.removeEventListener("scroll");
+    window.removeEventListener("scroll", null);
   },
   methods: {
     setupScroll() {
@@ -32,7 +32,7 @@ export default {
 
         window.addEventListener("scroll", _.debounce(() => {
           this.animate();
-        }, 50));
+        }, 10));
       }, 1000);
     }
   }

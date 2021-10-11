@@ -1,8 +1,5 @@
 <template>
   <header id="navigation">
-    <!--<div class="promo-code">
-      Zgodnji božični nakupi! Uporabite BOZICVOKTOBRU30 za 30% popust na VSE knjige! Preteče čez: 9 h 8 min 9 sek
-    </div>-->
     <div class="navbar content">
       <div class="nav-section justify-left">
         <img src="/images/nav-hamburger.png" alt="Menu">
@@ -12,8 +9,10 @@
         <img src="/images/nav-logo.png" alt="Logo Mali junaki">
       </div>
       <div class="nav-section justify-right">
-        <span class="mr-10">Košarica</span>
-        <img src="/images/nav-cart.png" alt="Nakupovalni voziček">
+        <div class="right-container">
+          <span class="mr-10">Košarica</span>
+          <img src="/images/nav-cart.png" alt="Nakupovalni voziček">
+        </div>
       </div>
     </div>
   </header>
@@ -30,23 +29,13 @@ export default {
 
 #navigation {
   height: 90px;
-  // height: 130px;
   background-color: #f4fdff;
   
-  /*
-  .promo-code {
-    height: 40px;
-    line-height: 40px;
-    background: hotpink;
-    text-align: center;
-    font-size: 1.3rem;
-    color: #fff;
-  }
-  */
-
   .navbar {
     display: flex;
-
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    
     .nav-section {
       display: flex;
       flex-basis: 0;
@@ -61,6 +50,17 @@ export default {
 
         @include breakpoint(xs-only) {
           display: none;
+        }
+      }
+
+      &.justify-right {
+        position: relative;
+
+        .right-container {
+          position: absolute;
+          right: 0;
+          display: flex;
+          align-items: center;
         }
       }
     }

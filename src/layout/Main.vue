@@ -31,12 +31,15 @@ export default {
     }
   },
   created() {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       // add extra timeout so that loading animation doesn't cut off too soon
       setTimeout(() => {
         this.loading = false;
       }, 500);
     });
+  },
+  beforeDestroy() {
+    window.removeEventListener("load", null);
   }
 }
 </script>

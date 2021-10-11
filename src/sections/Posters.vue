@@ -102,7 +102,7 @@ export default {
         height: 438px;
         background: $blueGray;
         position: absolute;
-        top: -49px;
+        top: -5px;
         z-index: -1;
         transform: rotate(-0.5deg);
         left: -6px;
@@ -115,9 +115,7 @@ export default {
         @include breakpoint(xs-only) {
           width: 98%;
           height: 104%;
-          top: -24px;
           left: 5px;
-          top: -25px;
         }
       }
     }
@@ -141,7 +139,7 @@ export default {
       }
     }
 
-    div {
+    div.link {
       display: flex;
       justify-content: center;
       margin-top: 44px;

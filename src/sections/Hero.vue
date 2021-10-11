@@ -67,13 +67,14 @@ export default {
     flex-direction: column;
     justify-content: center;
     width: 450px;
+    -webkit-animation: appear 1s; 
+    animation: appear 1s;
 
     @include breakpoint(xs-only) {
       padding: 0 25px;
     }
 
     .intro {
-      animation: appear 1s;
 
       h1 {
         margin-bottom: 30px;
@@ -85,7 +86,6 @@ export default {
       margin-top: 40px;
       margin-bottom: 10px;
       position: relative;
-      animation: appear 1s;
 
       @include breakpoint(xs-only) {
         display: block;
@@ -144,7 +144,7 @@ export default {
         }
 
         input {
-          width: 144px;
+          width: 130px;
           height: 36px;
           border-radius: 10px;
           border: 1px solid #4e5562;
@@ -197,7 +197,6 @@ export default {
 
     .bottom {
       text-align: center;
-      animation: appear 1s;
 
       & > span {
         display: block;

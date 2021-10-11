@@ -29,6 +29,11 @@ export default {
     margin-top: 40px;
     visibility: hidden;
 
+    &.animate {
+      visibility: visible;
+      animation: scroll-left 0.5s;
+    }
+
     img {
       max-width: 1128px;
       width: 100%;
